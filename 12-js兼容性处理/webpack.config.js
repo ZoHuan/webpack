@@ -35,7 +35,7 @@ module.exports = {
                 },
                 // 指定兼容性做到哪个版本浏览器
                 targets: {
-                  chorome: "60",
+                  chrome: "60",
                   firefox: "60",
                   ie: "9",
                   safari: "10",

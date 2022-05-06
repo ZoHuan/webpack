@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("throw new Error(\"Module build failed (from ../node_modules/_eslint-loader@4.0.2@eslint-loader/dist/cjs.js):\\nTypeError: Cannot read property 'getFormatter' of undefined\\n    at getFormatter (E:\\\\webpack\\\\node_modules\\\\_eslint-loader@4.0.2@eslint-loader\\\\dist\\\\getOptions.js:52:20)\\n    at getOptions (E:\\\\webpack\\\\node_modules\\\\_eslint-loader@4.0.2@eslint-loader\\\\dist\\\\getOptions.js:30:23)\\n    at Object.loader (E:\\\\webpack\\\\node_modules\\\\_eslint-loader@4.0.2@eslint-loader\\\\dist\\\\index.js:17:43)\");\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("function add(x, y) {\r\n  return x + y;\r\n}\r\n// 下一行eslint所有规则都失效（下一行不进行eslint检查）\r\n// eslint-disable-next-line\r\nconsole.log(add(1, 2));\r\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 
