@@ -10,7 +10,7 @@ module.exports = {
   module: {
     rules: [
       /* 
-        js兼容性处理:babel-loader @babel/preset-env
+        js兼容性处理:babel-loader @babel/core @babel/preset-env
         1.基本js兼容性处理 --> @babel/preset-env
           问题：只能转换基本语法，如promise不能转换
         2.全部js兼容性处理 --> @babel/polyfill
