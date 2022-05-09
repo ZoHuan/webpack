@@ -56,6 +56,7 @@
   "eslintConfig": {
     "extends": "airbnb-base"
   },
+  "sideEffects":["*.css"],
   "dependencies": {
     "_acorn@6.4.2@acorn": "^6.4.2",
     "_ajv-keywords@3.5.2@ajv-keywords": "^3.5.2",
