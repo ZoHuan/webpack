@@ -1,12 +1,11 @@
 const { resolve } = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCssAssetsWebpackPlugin = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  // 单入口
   entry: "./src/js/index.js",
   output: {
-    filename: "js/built.[contenthash:10].js",
+    filename: "js/[name].[contenthash:10].js",
     path: resolve(__dirname, "build"),
   },
 
@@ -20,5 +19,11 @@ module.exports = {
       },
     }),
   ],
+
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
+  },
   mode: "production",
 };
